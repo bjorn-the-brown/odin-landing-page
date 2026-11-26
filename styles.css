@@ -29,17 +29,30 @@ h1 {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
-
+    
 }
 
 h2 {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    margin-top: 0;
 }
 
 button {
     background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+button.dark {
+    border: none;
+}
+
+button.light {
+    border: solid #F9FAF8;
 }
 
 blockquote {
@@ -47,33 +60,77 @@ blockquote {
     font-weight: 300;
     font-style: italic;
     color: #1F2937;
+    margin: 0;
 }
 
 #logo {
     color: #F9FAF8;
     font-size: 24px;
     font-weight: 900;
-
+    
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #1F2937;
+    padding: 16px 64px;
 }
 
 .hero {
     display: flex;
     background-color: #1F2937;
     align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 64px 64px;
+}
+
+.img-placeholder {
+    width: 600px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #656b72;
+    color: #E5E7EB;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 64px;
 }
 
 .container {
     display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.frame {
+    border: solid #3882F6;
+    height: 150px; 
+    width: 150px;
+    border-radius: 16px;
+}
+
+.info-card{
+    flex: 0 0 150px;
+    text-align: center;
 }
 
 .quote {
     background-color: #E5E7EB;
+    padding: 64px 64px;
+}
+
+.quote p {
+    text-align: end;
+    font-weight: 900;
 }
 
 .cta {
@@ -81,6 +138,14 @@ blockquote {
     justify-content: space-between;
     align-items: center;
     background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 64px 64px;
+    margin: 64px 64px;
+}
+
+.cta-header {
+    font-size: 24px;
+    font-weight: 900;
 }
 
 .footer {
@@ -90,4 +155,5 @@ blockquote {
     margin-top: auto;
     background-color: #1F2937;
     color: #F9FAF8;
+    padding: 32px;
 }
