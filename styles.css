@@ -1,18 +1,18 @@
 * {
     font-family: Roboto, sans;
+    margin: 0;
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
 }
 
 ul {
     list-style: none;
     display: flex;
-    gap: 16px;
+    gap: 32px;
 }
 
 a {
@@ -36,15 +36,15 @@ h2 {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
-    margin-top: 0;
 }
 
 button {
     background-color: #3882F6;
     color: #F9FAF8;
-    padding: 8px 24px;
+    padding: 8px 32px;
     border-radius: 8px;
     font-weight: 900;
+    font-size: 16px;
 }
 
 button.dark {
@@ -60,7 +60,6 @@ blockquote {
     font-weight: 300;
     font-style: italic;
     color: #1F2937;
-    margin: 0;
 }
 
 #logo {
@@ -75,7 +74,7 @@ blockquote {
     justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
-    padding: 16px 64px;
+    padding: 16px 10%;
 }
 
 .hero {
@@ -83,8 +82,16 @@ blockquote {
     background-color: #1F2937;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
-    padding: 64px 64px;
+    gap: 64px;
+    padding: 72px 10%;
+}
+
+.hero-message {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .img-placeholder {
@@ -102,12 +109,13 @@ blockquote {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 64px 64px;
+    padding: 64px 10%;
+    gap: 48px;
 }
 
 .container {
     display: flex;
-    gap: 32px;
+    gap: 48px;
     align-items: center;
 }
 
@@ -116,21 +124,25 @@ blockquote {
     height: 150px; 
     width: 150px;
     border-radius: 16px;
+    margin-bottom: 8px;
 }
 
 .info-card{
-    flex: 0 0 150px;
+    flex: 0 1 150px;
     text-align: center;
+    color: #656b72;
 }
 
 .quote {
     background-color: #E5E7EB;
-    padding: 64px 64px;
+    padding: 10% 20%;
 }
 
 .quote p {
     text-align: end;
+    font-size: 24px;
     font-weight: 900;
+    color: #1F2937;
 }
 
 .cta {
@@ -139,8 +151,9 @@ blockquote {
     align-items: center;
     background-color: #3882F6;
     color: #F9FAF8;
-    padding: 64px 64px;
-    margin: 64px 64px;
+    padding: 64px 10%;
+    margin: 64px 10%;
+    border-radius: 16px;
 }
 
 .cta-header {
